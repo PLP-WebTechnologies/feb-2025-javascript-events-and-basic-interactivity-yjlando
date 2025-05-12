@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Handling & Interactive Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript Event Handling & Interactive Elements</h1>
+
+    <!-- Button Click Event -->
+    <button id="clickButton">Click Me!</button>
+
+    <!-- Hover Effects -->
+    <div id="hoverBox" style="width: 100px; height: 100px; background-color: red;">Hover over me!</div>
+
+    <!-- Keypress Detection -->
+    <input type="text" id="textInput" placeholder="Type something...">
+
+    <!-- Secret Action (Double Click / Long Press) -->
+    <button id="secretButton">Double-click or long press me!</button>
+
+    <!-- Interactive Button (Changes Text/Color) -->
+    <button id="changeButton">Click me to change!</button>
+
+    <!-- Image Gallery / Slideshow -->
+<div>
+    <img id="gallery" src="images/two.jpg" alt="Gallery Image" style="width: 200px; height: 200px;">
+    <button onclick="nextImage()">Next Image</button>
+</div>
+
+    <!-- Tabs / Accordion -->
+    <div class="tabs">
+        <button class="tab" onclick="showTab('content1')">Tab 1</button>
+        <button class="tab" onclick="showTab('content2')">Tab 2</button>
+    </div>
+    <div id="content1" class="tabContent" style="display: none;">
+        <p>This is the content of Tab 1</p>
+    </div>
+    <div id="content2" class="tabContent" style="display: none;">
+        <p>This is the content of Tab 2</p>
+    </div>
+
+    <!-- Form Validation (Username, Email, Password) -->
+    <form id="myForm">
+        <input type="text" id="username" placeholder="Enter username" required>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
